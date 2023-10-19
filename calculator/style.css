@@ -21,25 +21,28 @@ body {
   height: 40px;
   margin-bottom: 10px;
   font-size: 20px;
+  border-radius: 20px;
 }
 
 .buttons button {
   width: 60px;
   height: 60px;
-  font-size: 20px;
+  font-size: 25px;
   margin: 5px;
   border: none;
   outline: none;
   background-color: #eee;
   cursor: pointer;
+  border-radius: 30px;
 }
 
 .buttons button:nth-child(18) {
+  width: 200px;
   background-color: #ff9800;
   color: #fff;
 }
 
-.buttons button:nth-child(4) {
+.buttons button:nth-child(17) {
   background-color: #e74c3c;
   color: #fff;
 }
