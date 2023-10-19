@@ -1,6 +1,5 @@
 let display = document.getElementById("display")
 let equation = ""
-let operations = ["+", "/", ".", "*"]
 
 function appendToDisplay(value) {
     equation += value
