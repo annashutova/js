@@ -49,7 +49,7 @@ class Calculator {
     }
 
     updateHistory() {
-        this.historyList.innerHTML = ""
+        this.historyList.textContent = ""
         this.history.forEach((entry) => {
             const listItem = document.createElement("li")
             listItem.textContent = entry
