@@ -42,8 +42,8 @@ class Calculator {
     }
 
     addToHistory(entry) {
-        this.history.unshift(entry)
-        if (this.history.length > 10) {
+        let historyLength = this.history.unshift(entry)
+        if (historyLength > 10) {
             this.history.pop()
         }
     }
