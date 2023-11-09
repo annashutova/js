@@ -74,9 +74,5 @@ class Calculator {
 
 const calculator = new Calculator()
 const history = document.getElementById("history-button")
-const clearAll = document.getElementById("clear-button")
-const evaluate = document.getElementById("calculate-button")
 
 history.addEventListener('click', () => calculator.toggleHistory())
-clearAll.addEventListener('click', () => calculator.clearDisplay())
-evaluate.addEventListener('click', () => calculator.calculateResult())
