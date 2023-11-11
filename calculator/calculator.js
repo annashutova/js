@@ -20,16 +20,6 @@ class Calculator {
         this.display.value = this.equation
     }
 
-    clearDisplay() {
-        this.equation = ""
-        this.display.value = ""
-    }
-
-    removeLastSymbol() {
-        this.equation = this.equation.slice(0, -1)
-        this.display.value = this.equation
-    }
-
     calculateResult() {
         try {
             this.equation = eval(this.equation).toString()
@@ -70,6 +60,16 @@ class Calculator {
           this.historyContent.style.display = "block"
         }
     }
+}
+
+Calculator.prototype.clearDisplay = function() {
+    this.equation = ""
+    this.display.value = ""
+}
+
+Calculator.prototype.removeLastSymbol = function() {
+    this.equation = this.equation.slice(0, -1)
+    this.display.value = this.equation
 }
 
 const calculator = new Calculator()
